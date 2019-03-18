@@ -58,6 +58,7 @@ public final class LevelDbLogReaderTest {
     reader.readFrom(new ByteArrayInputStream(block.data));
     ImmutableList<byte[]> records = reader.getRecords();
     assertThat(records).hasSize(block.recordCount);
+    assertThat(false).isTrue();
   }
 
   @Test
